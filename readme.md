@@ -10,3 +10,7 @@ yarn install
 yarn start 
 
 ```
+
+## Imcomming 
+ - Redux
+ - Router
