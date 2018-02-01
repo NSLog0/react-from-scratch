@@ -1,0 +1,19 @@
+{
+  "presets": ["es2015", "react"],
+  "plugins": [
+    [   
+      "transform-object-rest-spread", "transform-class-properties", "transform-runtime"
+    ],
+    [
+      "module-resolver",
+    {
+      "root": ["."],
+      "alias": {
+        "@components": "./components"
+      },
+      "cwd": "babelrc"
+    }
+    ]
+  ]
+}
+
