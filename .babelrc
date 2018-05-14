@@ -1,19 +1,26 @@
 {
-  "presets": [["es2015", { "module": false }], "react"],
-  "plugins": [
-    [   
-      "transform-object-rest-spread", "transform-class-properties", "transform-runtime"
-    ],
-    [
-      "module-resolver",
-    {
-      "root": ["."],
-      "alias": {
-        "@components": "./components"
+  "presets": [["env", {
+    "modules": false,
+      "targets": {
+        "browsers": "> 1%",
+        "uglify": true
       },
-      "cwd": "babelrc"
-    }
+      "useBuiltIns": true
+  }], "react"],
+    "plugins": [
+      [   
+        "transform-object-rest-spread", "transform-class-properties", "transform-runtime"
+      ],
+      [
+        "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@components": "./components"
+        },
+        "cwd": "babelrc"
+      }
+      ]
     ]
-  ]
 }
 
